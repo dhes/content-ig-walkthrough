@@ -15,16 +15,6 @@
     }
   }, {
     "entity": {
-      "reference": "Patient/mom-with-anaemia",
-      "display": "Eve Everywoman"
-    }
-  }, {
-    "entity": {
-      "reference": "Patient/mom-without-anaemia",
-      "display": "Eve Everywoman"
-    }
-  }, {
-    "entity": {
       "reference": "Patient/mom-without-anaemia",
       "display": "Eve Everywoman"
     }
