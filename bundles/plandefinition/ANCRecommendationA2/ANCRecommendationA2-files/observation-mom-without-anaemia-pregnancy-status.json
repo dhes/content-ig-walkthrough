@@ -12,7 +12,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/mom-without-anaemia"
+    "reference": "Patient/folate-mom-without-anaemia"
   },
   "effectivePeriod": {
     "start": "2022-10-03T15:30:00Z",

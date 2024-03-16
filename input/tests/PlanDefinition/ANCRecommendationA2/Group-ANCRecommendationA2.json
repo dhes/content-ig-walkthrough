@@ -10,12 +10,12 @@
   "actual": true,
   "member": [ {
     "entity": {
-      "reference": "Patient/mom-with-anaemia",
+      "reference": "Patient/folate-mom-with-anaemia",
       "display": "Eve Everywoman"
     }
   }, {
     "entity": {
-      "reference": "Patient/mom-without-anaemia",
+      "reference": "Patient/folate-mom-without-anaemia",
       "display": "Eve Everywoman"
     }
   } ]
