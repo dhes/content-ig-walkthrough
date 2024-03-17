@@ -7,8 +7,8 @@
 		<use value="official"/>
 		<value value="PlanDefinition_ANCRecommendationA2"/>
 	</identifier>
-	<name value="PlanDefinition_ANCRecommendationA2"/>
-	<title value="PlanDefinition - WHO ANC Guideline Recommendation A.2"/>
+	<name value="PlanDefinition - WHO ANC Guideline Recommendation A.2"/>
+	<title value="Antenatal anemia screening"/>
 	<type>
 		<coding>
 			<system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
