@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "folate-mom-without-anaemia",
+  "id": "anc-mom-without-anaemia",
   "meta": {
     "profile": [
       "http://fhir.org/guides/who/anc-cds/StructureDefinition/ancpatient"
