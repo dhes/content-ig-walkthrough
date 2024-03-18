@@ -24,6 +24,18 @@ code "Delivery date Estimated from last menstrual period": '11779-6' from LOINC 
 
 context Patient
 
+define "Alive": 
+  case 
+    // when Patient.deceased = true then false //redundant
+    when Patient.deceased = false then true
+    // when "Null Patient.deceased assumed to mean alive" = true and Patient.deceased is null then true // default is false. Your dead unless you the records says you are not. 
+    else false
+  end
+
+define Active: 
+  if Patient.active = true then true
+	else false
+
 /*
 On every contact,
   if anaemia detected

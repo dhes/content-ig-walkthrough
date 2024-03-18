@@ -17,13 +17,12 @@
     }
   ],
   "active": true,
+  "deceasedBoolean": false,
   "name": [
     {
       "use": "official",
       "family": "Everywoman",
-      "given": [
-        "Eve"
-      ]
+      "given": ["Eve"]
     }
   ],
   "telecom": [
