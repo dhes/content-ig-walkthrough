@@ -9,6 +9,7 @@
 	</identifier>
 	<name value="PlanDefinition - WHO ANC Guideline Recommendation A.2"/>
 	<title value="Antenatal anemia screening"/>
+	<description value="Daily oral iron and folic acid supplementation is recommended for pregnant women to prevent maternal anaemia, puerperal sepsis, low birth weight, and preterm birth."/>
 	<type>
 		<coding>
 			<system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
