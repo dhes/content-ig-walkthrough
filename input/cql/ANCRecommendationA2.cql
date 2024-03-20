@@ -22,6 +22,10 @@ code "Pregnancy status": '82810-3' from LOINC display 'Pregnancy status'
 code "Pregnancy status - Pregnant": 'LA15173-0' from LOINC display 'Pregnant'
 code "Delivery date Estimated from last menstrual period": '11779-6' from LOINC display 'Delivery date Estimated from last menstrual period'
 
+parameter "Reference Date" DateTime 
+  // default  @2024-01-01T00:00:00-10:00 // for testing within this project
+  default Now() // for testing within a CQL Testing Framework project
+
 context Patient
 
 define "Alive": 
