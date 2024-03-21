@@ -24,7 +24,7 @@ code "Delivery date Estimated from last menstrual period": '11779-6' from LOINC 
 
 parameter "Reference Date" DateTime 
   // default  @2024-01-01T00:00:00-10:00 // for testing within this project
-  default Now() // for testing within a CQL Testing Framework project
+  default Today() // for testing within a CQL Testing Framework project
 
 context Patient
 
