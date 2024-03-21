@@ -14,12 +14,9 @@
   "subject": {
     "reference": "Patient/anc-mom-with-anaemia"
   },
-  "effectivePeriod": {
-    "start": "2022-10-02T15:30:00Z",
-    "end": "2022-10-02T15:30:00Z"
-  },
-  "issued": "2022-10-02T15:30:00Z",
-  "valueDateTime": "2023-04-10",
+  "effectiveDateTime": "2023-10-03",
+  "issued": "2023-10-03",
+  "valueDateTime": "2024-04-10",
   "_valueDateTime": {
     "extension": [
       {

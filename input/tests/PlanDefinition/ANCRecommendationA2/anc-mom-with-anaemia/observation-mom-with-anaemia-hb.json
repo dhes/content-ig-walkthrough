@@ -34,11 +34,8 @@
     "reference": "Patient/anc-mom-with-anaemia",
     "display": "Eve Everywoman"
   },
-  "effectivePeriod": {
-    "start": "2022-10-03T15:30:00Z",
-    "end": "2022-10-03T15:30:00Z"
-  },
-  "issued": "2022-10-03T15:30:00Z",
+  "effectiveDateTime": "2023-10-03",
+  "issued": "2023-10-03",
   "valueQuantity": {
     "value": 7.2,
     "unit": "g/dl",
