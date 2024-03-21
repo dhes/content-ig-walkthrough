@@ -58,8 +58,15 @@ define "Has Anaemia":
   else
     "Hb Concentration" < 11 'g/dL'
 
+// define "Pregnant":
+//     "Pregnancy Status" ~ "Pregnancy status - Pregnant"
+
 define "Pregnant":
-    "Pregnancy Status" ~ "Pregnancy status - Pregnant"
+  exists([Observation: "Pregnancy status"] O
+    where O.status = 'final'
+    and O.value ~ "Pregnancy status - Pregnant" // Pregnant
+    and O.effective <= "Reference Date")
+  and ("Estimated Due Date" > "Reference Date")
 
 define "Pregnancy Status":
   FHIRHelpers.ToConcept(
@@ -75,13 +82,13 @@ define "Estimated Due Date":
     First(
       [Observation: "Pregnancy Expected Delivery Date Method - IPS"] O
         where O.status = 'final'
-          and FHIRHelpers.ToDateTime(O.issued) 1 year or less before Today()
+          and FHIRHelpers.ToDateTime(O.issued) 1 year or less before "Reference Date"
         sort by FHIRHelpers.ToDateTime(effective as FHIR.dateTime) desc
     ).value
   )
 
 define "Gestational Age in Weeks":
-  weeks between ("Estimated Due Date" - 9 months - 7 days) and Today()
+  weeks between ("Estimated Due Date" - 9 months - 7 days) and "Reference Date"
 
 define "Hb Concentration":
   FHIRHelpers.ToQuantity(
